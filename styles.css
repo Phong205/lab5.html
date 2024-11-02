@@ -1,0 +1,324 @@
+/* Tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2f2f2f;
+    padding: 20px;
+    color: white;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header .watched-info {
+    display: block;
+    width: 100%;
+    font-size: 0.9em;
+    color: #b5b5b5;
+}
+
+header .watched-info a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+header .nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header .nav-links a:hover {
+    color: #ddd;
+}
+
+/* Bộ lọc */
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+}
+
+.filters button:hover {
+    background-color: #ddd;
+}
+
+.filters input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+    max-width: 200px;
+}
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+}
+
+.dropbtn:hover {
+    background-color: #ddd;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Reset Button */
+.reset-btn {
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Search Box */
+.search-box {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 200px;
+    flex-grow: 1;
+}
+
+
+/* Lưới khóa học */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Container for all courses */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Course Card */
+.course-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    font-size: 1em;
+    margin: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.course-card p {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 10px;
+}
+
+/* Progress and Rating Styles */
+.separator {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+/* Completion and Rating Row */
+.completion-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.completion {
+    color: #333;
+}
+
+.rating {
+    color: #f5a623; /* Gold color for stars */
+}
+
+/* Leave a Rating Text */
+.rate {
+    color: #888;
+    font-size: 0.8em;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+
+/* learnning */
+
+/* Kiểu dáng chung */
+.learning-paths {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.learning-path-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+/* Hiệu ứng khi di chuột vào */
+.learning-path-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Nội dung trong thẻ */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.learning-path-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.learning-path-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Thanh tiến độ */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 8px;
+    height: 8px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #4caf50;
+    height: 100%;
+}
+/* Phần trăm hoàn thành */
+.completion-percentage {
+    position: absolute;
+    right: 5px;
+    top: -20px; /* Điều chỉnh vị trí phần trăm */
+    font-size: 14px;
+    color: #333;
+}
+
+/* Thêm hiệu ứng fade-in cho các phần tử */
+.learning-path-card {
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
